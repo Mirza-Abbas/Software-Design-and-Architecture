@@ -1,0 +1,31 @@
+Task # 1:
+Set ItemPrice
+Display "Enter Price of Item:"
+Read ItemPrice
+Set DiscountPrice
+Compute DiscountPrice as ItemPrice * 0.20
+Compute DiscountPrice as ItemPrice - DiscountPrice
+Display "Original Price: " ItemPrice
+Display "Discounted Price: " DiscountPrice
+
+Task # 2:
+Set StringList
+
+Repeat for 5 times
+	Display "Enter String: "
+	Read UserString
+	Add UserString to StringList
+End Repeat
+
+for all elements in StringList
+	
+	for all elements in StringList - i
+		If StringList[i] > StringList[i+1]
+			swap StringList[i] with StirngList[i+1]
+		End If
+	End For
+End For
+
+Repeat for each string in StringList:
+	Display string
+End Repeat
